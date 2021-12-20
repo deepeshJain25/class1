@@ -14,7 +14,6 @@ const NextLevel = (props) => {
   const backInfo = () => {
     props.backInfo("Deepesh Jain");
   };
-
   return (
     <div>
       <p>{props.name}</p>

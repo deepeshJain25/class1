@@ -34,13 +34,6 @@ class ClassComponent extends React.PureComponent {
     });
   }
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if (this.props.loading === nextProps.loading) {
-  //     return false;
-  //   }
-  //   return true;
-  // }
-
   catchInfo(data) {
     console.log("Child Component ", data);
     this.props.sendInfo(data);
