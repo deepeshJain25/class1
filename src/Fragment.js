@@ -1,5 +1,5 @@
-const Frag = ({ children }) => {
-  return <>{children}</>;
+const Frag = (properties) => {
+  return <>{properties.children}</>;
 };
 
 export default Frag;

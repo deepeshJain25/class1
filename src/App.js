@@ -4,7 +4,7 @@ import ClassComponent from "./ClassComponent";
 import FunctionalComp from "./FunctionalComp";
 import Button from "@mui/material/Button";
 import Frag from "./Fragment";
-// import {} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App(props) {
   const clickHandler = () => {
@@ -47,6 +47,7 @@ function App(props) {
     <div style={{ textAlign: "center" }}>
       <h1>React Class</h1>
       <input onChange={changeHandler} value={name} ref={inputRef} />
+
       <Frag>
         <Button variant="contained" onClick={clickHandler} margin="10px">
           Click me
@@ -61,6 +62,7 @@ function App(props) {
           Focus on input
         </Button>
       </Frag>
+      <Link to="/about">About</Link>
       <FunctionalComp loading={loading} name={name} sendInfo={catchInfo} />
     </div>
   );
